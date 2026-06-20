@@ -11,6 +11,8 @@ accept = [200, 202, 204, 206, 429]
 exclude = [
   "/security/advisories/new$",
   "^https://img\\.shields\\.io",
+  # the handbook's own published site (live only after the first deploy)
+  "^https://ruanpato\\.com/handbook-template/",
 ]
 
-exclude_path = [".internal", "node_modules", "site"]
+exclude_path = [".internal", "node_modules", "site", "templates"]
