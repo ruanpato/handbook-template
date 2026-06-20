@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this handbook, please cite it as below."
+title: "Handbook Template"
+type: dataset
+authors:
+  - name: "ruanpato"
+    website: "https://github.com/ruanpato"
+version: "0.1.0"
+date-released: "2026-06-20"
+license: CC-BY-4.0
+url: "https://ruanpato.com/handbook-template/"
+repository-code: "https://github.com/ruanpato/handbook-template"
+keywords: [handbook, study guide, roadmap, education]

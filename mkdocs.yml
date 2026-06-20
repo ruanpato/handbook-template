@@ -1,0 +1,43 @@
+# Handbook site — content lives in ./content/<lang>/ (NO root-as-docs_dir hack).
+# Raw .md stays readable on GitHub; MkDocs consumes the same files unchanged.
+site_name: Handbook Template
+site_description: Reusable bilingual technical-handbook template (Markdown + MkDocs).
+site_url: https://ruanpato.com/handbook-template/
+repo_url: https://github.com/ruanpato/handbook-template
+edit_uri: edit/main/content/
+
+docs_dir: content
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle: { icon: material/weather-night, name: Dark mode }
+    - scheme: slate
+      toggle: { icon: material/weather-sunny, name: Light mode }
+
+plugins:
+  - search
+  # Mirrored filenames across content/<lang>/ make folder-mode i18n "just work".
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+        - locale: pt-BR
+          name: Português (Brasil)
+
+markdown_extensions:
+  - admonition
+  - toc: { permalink: true }
+  - pymdownx.superfences
+
+# Build from a single source of truth; nav can be auto (folder) or explicit here.

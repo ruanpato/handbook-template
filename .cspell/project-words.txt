@@ -1,0 +1,11 @@
+# Project dictionary — technical terms not in the base en/pt-BR dictionaries.
+# One word per line. Keep it pruned.
+handbook
+roadmap
+MkDocs
+mkdocs
+linguist
+frontmatter
+operationalizable
+operationalized
+Entregável
